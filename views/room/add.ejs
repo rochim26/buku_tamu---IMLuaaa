@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Guest</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Add Room</h2>
+    
+        <form action="/rooms/add" method="POST">
+            <div class="mb-3">
+                <label for="RoomNumber" class="form-label">Room Number:</label>
+                <input type="text" id="RoomNumber" name="RoomNumber" class="form-control" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="Type" class="form-label">Room Type:</label>
+                <input type="text" id="Type" name="Type" class="form-control" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="Description" class="form-label">Description:</label>
+                <textarea id="Description" name="Description" class="form-control" rows="3"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Add Room</button>
+            <a href="/" class="btn btn-secondary">Back to Room List</a>
+        </form>
+    </div>
+    
+</html>
